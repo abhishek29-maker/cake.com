@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+.all-content{
+    background: #2e1700;
+}
+/* navbar */
+#navbar{
+    background-color: #573818;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    color: white;
+}
+#logo img{
+    margin-bottom: 15px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/* navbar end */
+/* home section */
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/background2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: rgba(161,109,14,1);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Birthday cake";}
+    20%{content: "Chocolate cake";}
+    50%{content: "Party cake";}
+    60%{content: "Slice cake";}
+    100%{content: "Cup cake";}
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #573818;
+    color: white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+
+.countdown {
+    position: absolute; /* Position it within the banner */
+    top: 40%; /* Adjust vertical position */
+    right: 180px; /* Distance from the right */
+    padding: 70px; /* Padding inside the box */
+    left: 43vw;
+    background: #ffffff; /* White background */
+    border-radius: 40px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center; /* Center the text */
+    z-index: 1000; /* Make sure it's on top */
+    width: 50vw; /* Set a fixed width */
+    background-image: url(box1.jpg);
+    height: 17vw;
+    filter: drop-shadow( 2px 2px 10px gold);
+    
+     
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around; /* Space out the boxes */
+    margin-top: 15px; /* Add space above timer boxes */
+}
+
+.time-box {
+    background: linear-gradient(135deg, #ffebee, #f8bbd0); /* Gradient background */
+    border-radius: 10px; /* Rounded corners for time boxes */
+    padding: 15px; /* Padding inside boxes */
+    flex: 1; /* Make boxes equal width */
+    margin: 0 5px; /* Margin between boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.time-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.time-box span {
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold;
+    color: #d81b60; /* Use a striking color */
+}
+
+.time-label {
+    font-size: 1rem; /* Adjust font size for labels */
+    color: #6c757d; /* Gray text */
+}
+
+/* home section end */
+ 
+/* top cards */
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+/* top cards end */
+
+/* product cards */
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#product-cards .card{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-top: 5%;
+    transition: 0.5s ease;
+}
+ #ram{
+    filter: drop-shadow(8px 8px 12px black);
+ }
+.overlay i img{
+    background-color: #25157f;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+      text-shadow: 60px 60px 60px rgb(0, 0, 0);;
+}
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+#product-cards h3{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.star .checked{
+     color: yellow;
+     text-shadow: 1px 1px 1px black;
+}
+#product-cards p{
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6 span button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #573818;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6 span button:hover{
+    background-color: #2e1700;
+    color: white;
+}
+
+/* product cards end */
+
+/* gallary */
+#gallary{
+    margin-top: 50px;
+}
+#gallary h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+
+#gallary .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallary .overlay{
+    opacity: 0;
+    width: 100%;
+    color: rgb(73, 255, 70);
+    text-shadow: 1px 1px 1px black;
+}
+#gallary .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.6s ease;
+}
+/* gallary */
+/* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgb(0, 249, 125);
+}
+#about .card{
+    background-color: rgb(161, 109, 14);
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: rgb(161, 129, 14);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: rgba(161,109,14,1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/* about */
+/* contact */
+#contact{
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#contact input{
+    background-color: rgba(161,109,14,1);
+}
+#contact input::placeholder{
+    color: white;
+}
+#contact textarea{
+    background-color: rgba(161,109,14,1);
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: rgba(161,109,14,1);
+}
+/* contact */
+/* footer */
+#footer{
+    width: 100%;    
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons i{
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color: rgba(161,109,14,1);
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-box {
+    display: none; /* Hide by default */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.messages {
+    padding: 10px;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.open-chat-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
